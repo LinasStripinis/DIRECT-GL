@@ -21,7 +21,7 @@ The code in this repository is based on the works in [[1]](#1)[[2]](#2)[[3]](#3)
 [1] C. A. Baker, L. T. Watson, B. Grossman, W. H. Mason, R. T. Haftka, [Parallel global aircraft configuration design space exploration, in: A. Tentner (Ed.)](https://www.semanticscholar.org/paper/Parallel-Global-Aircraft-Configuration-Design-Space-Baker-Watson/2ca51b579b927476a21a4a751ef2ca8792f8944a), High Performance Computing Symposium 2000, Soc. for Computer Simulation Internat, 2000, pp. 54–66. <a name="1">
 </a>
 
-[2] D. E. Finkel, MATLAB source code for DIRECT, \url{http://www4.ncsu.edu/~ctk/Finkel_Direct/}, online; accessed: 2017-03-22 (2004).
+[2] D. E. Finkel, MATLAB source code for DIRECT, http://www4.ncsu.edu/~ctk/Finkel_Direct/, online; accessed: 2017-03-22 (2004).
 
 [3] J. He, L. T. Watson, N. Ramakrishnan, C. A. Shaffer, A. Verstak, J. Jiang, K. Bae, W. H. Tranter, [Dynamic data structures for a DIRECT search algorithm](https://link.springer.com/article/10.1023/A:1019992822938), Computational Optimization and Applications 23 (1) (2002) 5–25. 
 
