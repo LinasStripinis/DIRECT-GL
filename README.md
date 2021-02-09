@@ -31,7 +31,7 @@ The code in this repository is based on the works in [[1]](#1)[[2]](#2)[[3]](#3)
 [5] L. Stripinis, R. Paulavičius, and J. Žilinskas, [Penalty functions and two-step selection procedure based DIRECT-type algorithm for constrained global optimization](http://link.springer.com/10.1007/s00158-018-2181-2), Struct. Multidiscip. Optim., vol. 59, no. 6, pp. 2155–2175, 2019. <a name="3">
 </a>
 
-[6] L. Stripinis, J. Žilinskas, L. G. Casado, and R. Paulavičius, *On MATLAB experience in accelerating DIRECT-GLce algorithm for constrained global optimization through dynamic data structures and parallelization*, pp. 1–25. Submitted. <a name="4">
+[6] L. Stripinis, J. Žilinskas, L. G. Casado, and R. Paulavičius, *On MATLAB experience in accelerating DIRECT-GLce algorithm for constrained global optimization through dynamic data structures and parallelization*, Applied Mathematics and Computation. ISSN: 0096-3003. 2021, vol. 390, p. 1-17. DOI: 10.1016/j.amc.2020.125596. <a name="4">
 </a>
 
 [7] L. Stripinis, R. Paulavičius, A modified DIRECT-GL algorithm for global optimization with hidden constraints, pp. 1–25. Submitted. <a name="5">
