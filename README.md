@@ -105,11 +105,23 @@ Please use the following bibtex entry, if you consider to cite those implementat
 ```latex
 @misc{Stripinis2020directgl,
     title     = {{Sequential and parallel DIRECT-type algorithms for box and generally constrained global optimization problems in MATLAB}},
-    author    = {Linas Stripinis},
+    author    = {Stripinis, Linas},
     year      = {2020},
     publisher = {GitHub},
     journal   = {GitHub repository},
     url       = {https://github.com/LinasStripinis/DIRECT-GL},
     version   = {1.0}
+}
+
+@phdthesis{Stripinis2021phd,
+    booktitle = {Improvement, development and implementation of derivative-free global optimization algorithms},
+    publisher = {Vilniaus universitetas. Prieiga per eLABa – nacionalinė Lietuvos akademinė elektroninė biblioteka},
+    author    = {Stripinis, Linas},
+    year      = {2021},
+    school    = {Vilniaus universitetas},
+    doi       = {10.15388/vu.thesis.138}, 
+    language  = {eng},
+    address   = {Vilnius},
+    pages     = {156}
 }
 ```
