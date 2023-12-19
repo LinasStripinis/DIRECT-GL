@@ -41,28 +41,27 @@ This repository contains MATLAB-based implementations of both sequential and par
 
 ```matlab
 % Problem structure
-problem.f 			= @(x) sum(x); 						% Objective function f(x)
-problem.constraint 	= @(x) deal( sum(x.^2) - 3, 0 );	% inequality constraint function g(x) <= 0
+problem.f = @(x) sum(x); % Objective function f(x)
+problem.constraint = @(x) deal( sum(x.^2) - 3, 0 ); % inequality constraint function g(x) <= 0
 
 % Bounds for the design variables
-xL 					= -4*ones(3, 1); 					% lower bound vector
-xU 					= 4*ones(3, 1);						% upper bound vector
-bounds 				= [xL, xU];
+xL = -4*ones(3, 1); % lower bound vector
+xU = 4*ones(3, 1); % upper bound vector
+bounds = [xL, xU];
 
 % Options structure
-options.maxevals 	= 1e+4;								% maximum number of function evaluations
-options.maxits 		= 1e+4;								% maximum number of algorithm iterations
-options.showits 	= 1;								% print iteration status
-options.testflag 	= 1;								% test flag if global minima is known
-options.globalmin 	= -3;								% globalmin (if known)
-options.tol 		= 0.01;								% tolerance for termination if testflag = 1
+options.maxevals = 1e+4; % maximum number of function evaluations
+options.maxits = 1e+4; % maximum number of algorithm iterations
+options.showits = 0; % print iteration status
+options.testflag = 1; % test flag if global minima is known
+options.globalmin = -3; % globalmin (if known)
+options.tol = 0.01; % tolerance for termination if testflag = 1
 
 [fval, x] = dDirect_GLc(problem, bounds, options)
 Minima was found with Tolerance: 1.000000e-02
 fval =
 
    -2.9999
-
 
 x =
 
