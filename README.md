@@ -100,7 +100,7 @@ Please use the following bibtex entry, if you consider to cite those implementat
     year      = {2020},
     publisher = {GitHub},
     journal   = {GitHub repository},
-    url       ={https://github.com/LinasStripinis/DIRECT-GL},
+    url       = {https://github.com/LinasStripinis/DIRECT-GL},
     version   = {1.0}
 }
 ```
