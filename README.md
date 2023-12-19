@@ -39,6 +39,8 @@ This repository contains MATLAB-based implementations of both sequential and par
 
 ## Example
 
+**Define Inputs**
+
 ```matlab
 % Problem structure
 problem.f = @(x) sum(x); % Objective function f(x)
@@ -56,9 +58,18 @@ options.showits = 0; % print iteration status
 options.testflag = 1; % test flag if global minima is known
 options.globalmin = -3; % globalmin (if known)
 options.tol = 0.01; % tolerance for termination if testflag = 1
+```
 
-[fval, x] = dDirect_GLc(problem, bounds, options)
-Minima was found with Tolerance: 1.000000e-02
+**Run the Algorithm**
+
+```matlab
+[fval, x] = dDirect_GLc(problem, bounds, options) % run the dDirect_GLc 
+```
+
+**Output**
+
+```matlab
+Minima was found with Tolerance: 0.01
 fval =
 
    -2.9999
@@ -69,8 +80,6 @@ x =
    -0.9950
    -1.0023
 ```
-
-
 
 ## References
 
