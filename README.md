@@ -1,20 +1,77 @@
-# Sequential and  parallel DIRECT-type implementations
+# Sequential and Parallel DIRECT-type Implementations
 
-Sequential and parallel DIRECT-type algorithms for box and generally constrained global optimization problems
+This repository contains MATLAB-based implementations of both sequential and parallel algorithms designed for box-constrained, generally constrained, and hidden constrained global optimization problems. The code provided here builds upon the foundational works referenced in [1] through [7].
 
-The code in this repository is based on the works in [[1]](#1)[[2]](#2)[[3]](#3)[[4]](#4)[[5]](#5)[[6]](#6)[[7]](#7)  and is written in MATLAB.
+**Sequential Implementations Based on Static Data Structures [3]:**
 
-## Getting started
+- For box-constrained global optimization; `sDirect_GL`, `sDirect_G`, and `sDirect_L`;
+- For generally constrained global optimization: `sDirect_GLce`, `sDirect_GLc`, and `sDirect_GLce_min`;
+- For problems with hidden constraints: `sDirect_GLh`.
 
-- Download the entire folder containing all MATLAB files and add the entire folder and subfolders to the MATLAB path. 
-- Next run sequential codes `dDirect_GL`,`dDirect_G` and `dDirect_L` based on dynamic data structures [[3]](#3), which should run the pre-defined problem as defined in [[4]](#4).
-- Next run sequential codes `sDirect_GL`,`sDirect_G` and `sDirect_L` based on static data structures [[2]](#2), which should run the pre-defined problem as defined in [[4]](#4).
-- Next run sequential codes `dDirect_GLce`, `dDirect_GLc` and `dDirect_GLce_min` based on dynamic data structures [[3]](#3), which should run the pre-defined problem as defined in [[5]](#5).
-- Next run sequential codes `sDirect_GLce`, `sDirect_GLc` and `sDirect_GLce_min` based on static data structures [[2]](#2), which should run the pre-defined problem as defined in [[5]](#5).
-- Next run sequential codes `dDirect_GLh` based on dynamic data structures [[3]](#3), which should run the pre-defined problem as defined in [[5]](#5)[[7]](#7).
-- Next run sequential codes `dDirect_GLh` based on static data structures [[2]](#2), which should run the pre-defined problem as defined in [[5]](#5)[[7]](#7).
-- Next run parallel codes `parallel_dDirect_GL`,`parallel_dDirect_G` and  `parallel_dDirect_L` based on dynamic data structures [[3]](#3), which should run the pre-defined problem as defined in [[4]](#4).
-- Next run parallel codes `parallel_dDirect_GLce`, `parallel_dDirect_GLc`  and  `parallel_dDirect_GLce_min`  based on dynamic data structures [[3]](#3), which should run the pre-defined problem as defined in [[4]](#4).
+**Sequential Implementations Based on Dynamic Data Structures [3]:**
+
+- For box-constrained global optimization; `dDirect_GL`, `dDirect_G`, and `dDirect_L`;
+- For generally constrained global optimization: `dDirect_GLce`, `dDirect_GLc`, and `dDirect_GLce_min`;
+- For problems with hidden constraints: `dDirect_GLh`.
+
+**Parallel Implementations Based on Dynamic Data Structures [3] and MATLAB SPMD [x]:**
+
+- For box-constrained global optimization; `parallel_dDirect_GL`, `parallel_dDirect_G`, and `parallel_dDirect_L`;
+- For generally constrained global optimization: `parallel_dDirect_GLce`, `parallel_dDirect_GLc`, and `parallel_dDirect_GLce_min`;
+
+## Syntax
+
+```matlab 
+[fval, x, history] = algorithm(problem, bounds, options)
+```
+
+**Inputs:**
+
+- `problem`: The structure defining the optimization problem.
+- `bounds`: Specifies the lower and upper bounds for the design variables in the vector `x`.
+- `options`: Minimizes with the optimization options specified in `options`.
+
+**Outputs:**
+
+- `fval`: The best-found value of the objective function.
+- `x`: The best-found solution vector.
+- `history`: Provides the iterative status and details during the optimization process.
+
+## Example
+
+```matlab
+% Problem structure
+problem.f 			= @(x) sum(x); 						% Objective function f(x)
+problem.constraint 	= @(x) deal( sum(x.^2) - 3, 0 );	% inequality constraint function g(x) <= 0
+
+% Bounds for the design variables
+xL 					= -4*ones(3, 1); 					% lower bound vector
+xU 					= 4*ones(3, 1);						% upper bound vector
+bounds 				= [xL, xU];
+
+% Options structure
+options.maxevals 	= 1e+4;								% maximum number of function evaluations
+options.maxits 		= 1e+4;								% maximum number of algorithm iterations
+options.showits 	= 1;								% print iteration status
+options.testflag 	= 1;								% test flag if global minima is known
+options.globalmin 	= -3;								% globalmin (if known)
+options.tol 		= 0.01;								% tolerance for termination if testflag = 1
+
+[fval, x] = dDirect_GLc(problem, bounds, options)
+Minima was found with Tolerance: 1.000000e-02
+fval =
+
+   -2.9999
+
+
+x =
+
+   -1.0027
+   -0.9950
+   -1.0023
+```
+
+
 
 ## References
 
