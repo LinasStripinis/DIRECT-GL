@@ -1,6 +1,6 @@
 # Sequential and Parallel DIRECT-type Implementations
 
-![languages](https://img.shields.io/badge/language-MATLAB-blue) ![release](https://img.shields.io/badge/release-v1.0-blue)![OS](https://img.shields.io/badge/OS-windows,linux,macOS-blue) ![License](https://img.shields.io/badge/License-MIT-blue) ![contributions](https://img.shields.io/badge/contributions-welcome-greene) 
+![languages](https://img.shields.io/badge/language-MATLAB-blue) ![release](https://img.shields.io/badge/release-v1.0-blue)![OS](https://img.shields.io/badge/OS-windows,linux,macOS-blue) ![License](https://img.shields.io/badge/License-GPLv3.0-blue) ![contributions](https://img.shields.io/badge/contributions-welcome-greene) 
 
 ---
 
@@ -10,7 +10,7 @@
 - [Documentation](#documentation)
   - [Structure  of the Repository](#structure-of-the-repository)
   - [Syntax of the Codes](#syntax-of-the-codes)
-  - [Example of Running an Algorithm](#example-of running-an-algorithm)
+  - [Example of Running an Algorithm](#example-of-running-an-algorithm)
 - [Feedback, Contributions, and Collaboration Opportunities](#feedback,-contributions,-and-collaboration-opportunities)
 - [Cite repository](#cite-repository)
 - [References](#references)
