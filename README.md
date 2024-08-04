@@ -1,5 +1,14 @@
 # Sequential and Parallel DIRECT-type Implementations
 
+![languages](https://img.shields.io/badge/language-MATLAB-blue)![release](https://img.shields.io/badge/release-v1.0-blue)![OS](https://img.shields.io/badge/OS-windows, linux, macOS-blue)![License](https://img.shields.io/badge/License-MIT-blue)![contributions](https://img.shields.io/badge/contributions-welcome-greene)
+
+---
+
+## Table of Contents
+
+- [References](#references)
+- 
+
 This repository contains MATLAB-based implementations of both sequential and parallel algorithms designed for box-constrained, generally constrained, and hidden constrained global optimization problems. The code provided here builds upon the foundational works referenced in [1] through [6].
 
 **Sequential Implementations Based on Static Data Structures [1]:**
