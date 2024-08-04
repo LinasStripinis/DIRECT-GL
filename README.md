@@ -60,18 +60,6 @@ The repository includes MATLAB-based implementations of sequential and parallel 
 
 ### Example of Running an Algorithm
 
-Understanding the syntax, let's consider the following problem in the third dimension:
-$$
-\begin{array}{rl}
-	\min 		& \sum_{i=1}^n{x_i} \\
-	\text{s.t.} & \sum_{i=1}^n{x_i^2} \le n, \\
-				& -4 \le x_i \le 4. \\
-\end{array}
-$$
-The global minimum is located at:
-$$
-\mathbf{x}^* = -1, \quad f(\mathbf{x}^*) = -n.
-$$
 **Define Inputs**
 
 ```matlab
