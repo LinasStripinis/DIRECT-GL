@@ -1,6 +1,6 @@
 # Sequential and Parallel DIRECT-type Implementations
 
-![languages](https://img.shields.io/badge/language-MATLAB-blue)![release](https://img.shields.io/badge/release-v1.0-blue)![OS](https://img.shields.io/badge/OS-windows, linux, macOS-blue)![License](https://img.shields.io/badge/License-MIT-blue)![contributions](https://img.shields.io/badge/contributions-welcome-greene)
+![languages](https://img.shields.io/badge/language-MATLAB-blue) ![release](https://img.shields.io/badge/release-v1.0-blue)![OS](https://img.shields.io/badge/OS-windows,linux,macOS-blue) ![License](https://img.shields.io/badge/License-MIT-blue) ![contributions](https://img.shields.io/badge/contributions-welcome-greene) 
 
 ---
 
