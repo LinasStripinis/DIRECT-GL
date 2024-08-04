@@ -1,6 +1,6 @@
 # Sequential and Parallel DIRECT-type Implementations
 
-![languages](https://img.shields.io/badge/language-MATLAB-blue) ![release](https://img.shields.io/badge/release-v1.0-blue)![OS](https://img.shields.io/badge/OS-windows,linux,macOS-blue) ![License](https://img.shields.io/badge/License-GPLv3.0-blue) ![contributions](https://img.shields.io/badge/contributions-welcome-greene) 
+![languages](https://img.shields.io/badge/language-MATLAB-blue) ![release](https://img.shields.io/badge/release-v1.0-blue) ![OS](https://img.shields.io/badge/OS-windows,linux,macOS-blue) ![License](https://img.shields.io/badge/License-GPLv3.0-blue) ![contributions](https://img.shields.io/badge/contributions-welcome-greene) 
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## About
 
-The repository includes MATLAB-based implementations of sequential and parallel algorithms for solving global optimization problems under box, general, or hidden constraints. The code presented here extends the foundational research cited in references[^1][^2][^3][^4][^5][^6]. The algorithms included in this repository are the result of a PhD thesis[^7].
+The repository includes **MATLAB**-based implementations of sequential and parallel algorithms for solving global optimization problems under box, general, or hidden constraints. The code presented here extends the foundational research cited in references[^1][^2][^3][^4][^5][^6]. The algorithms included in this repository are the result of a PhD thesis[^7].
 
 ## Documentation
 
@@ -152,3 +152,4 @@ Please use the following bibtex entry, if you consider to cite those implementat
 [^5]: L. Stripinis, L. G. Casado, J. Žilinskas, R. Paulavičius. (2021). [On MATLAB experience in accelerating DIRECT-GLce algorithm for constrained global optimization through dynamic data structures and parallelization](https://www.sciencedirect.com/science/article/abs/pii/S0096300320305518?via%3Dihub). [*Applied Mathematics and Computation*](https://www.sciencedirect.com/journal/applied-mathematics-and-computation). ISSN: 0096-3003, vol. 390, no. 1, article 125596, 17 pages. DOI: [10.1016/j.amc.2020.125596](https://doi.org/10.1016/j.amc.2020.125596)
 [^6]: L. Stripinis, R. Paulavičius. (2021). [A new DIRECT-GLh algorithm for global optimization with hidden constraints](https://link.springer.com/article/10.1007%2Fs11590-021-01726-z). [Optimization Letters](http://www.springer.com/mathematics/journal/11590), ISSN: 1862-4480, vol. 15, no 1, p. 1865-1884. DOI: [10.1007/s11590-021-01726-z](https://doi.org/10.1007/s11590-021-01726-z)  
 [^7]: L. Stripinis. (2021). [Improvement, development and implementation of derivative-free global optimization algorithms]([Improvement, development and implementation of derivative-free global optimization algorithms](https://doi.org/10.15388/vu.thesis.138). Vilniaus universitetas. DOI: [10.15388/vu.thesis.138](https://doi.org/10.15388/vu.thesis.138)
+
